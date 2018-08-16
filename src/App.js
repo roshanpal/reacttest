@@ -37,7 +37,6 @@ class App extends Component {
 
 	selectVehicle(index, value) {
 		let vehicles = this.state.vehicles;
-		vehicles[value]['total_no']--;
 
 		let selectedVehicles = this.state.selectedVehicles;
 		selectedVehicles[index] = value;
@@ -60,23 +59,23 @@ class App extends Component {
 		return (
 			<div className="App" style={{ padding: 50 }}>
 				<Select cities={this.state.cities} vehicles={this.state.vehicles} index={0}
-				selectedCity={this.state.selectedCities[0]} 
-				selectedVehicle={this.state.selectedVehicles[0]}
+				selectedCities={this.state.selectedCities} 
+				selectedVehicles={this.state.selectedVehicles}
 				selectCity={(index, value) => this.selectCity(index, value)}
 				selectVehicle={(index, value) => this.selectVehicle(index, value)} />
 				<Select cities={this.state.cities} vehicles={this.state.vehicles} index={1}
-				selectedCity={this.state.selectedCities[1]} 
-				selectedVehicle={this.state.selectedVehicles[1]}
+				selectedCities={this.state.selectedCities} 
+				selectedVehicles={this.state.selectedVehicles}
 				selectCity={(index, value) => this.selectCity(index, value)}
 				selectVehicle={(index, value) => this.selectVehicle(index, value)} />
 				<Select cities={this.state.cities} vehicles={this.state.vehicles} index={2}
-				selectedCity={this.state.selectedCities[2]} 
-				selectedVehicle={this.state.selectedVehicles[2]}
+				selectedCities={this.state.selectedCities} 
+				selectedVehicles={this.state.selectedVehicles}
 				selectCity={(index, value) => this.selectCity(index, value)}
 				selectVehicle={(index, value) => this.selectVehicle(index, value)} />
 				<Select cities={this.state.cities} vehicles={this.state.vehicles} index={3}
-				selectedCity={this.state.selectedCities[3]} 
-				selectedVehicle={this.state.selectedVehicles[3]}
+				selectedCities={this.state.selectedCities} 
+				selectedVehicles={this.state.selectedVehicles}
 				selectCity={(index, value) => this.selectCity(index, value)}
 				selectVehicle={(index, value) => this.selectVehicle(index, value)} />
 
